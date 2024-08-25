@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    /* Colores de fondo */
+    --fondo-principal: #e5e5e5;
+  
+    /* Colores blanco */
+    --blanco: #ffffff;
+  
+    /* Colores azul oscuro */
+    --azul-oscuro-100: #609ed4;
+    --azul-oscuro-200: #356ea9;
+    --azul-oscuro-300: #0a3871;
+    --azul-oscuro-400: #072b61;
+    --azul-oscuro-500: #052051;
+  
+    /* Colores azul claro */
+    --azul-claro-100: #f3f5fc;
+    --azul-claro-200: #eff1fa;
+    --azul-claro-300: #e9ecf8;
+    --azul-claro-400: #aab2d5;
+    --azul-claro-500: #757fb2;
+  
+    /* Colores gris */
+    --gris-100: #ced4da;
+    --gris-200: #adb5bd;
+    --gris-300: #868e96;
+    --gris-400: #495057;
+    --gris-500: #343a40;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: "Inter", sans-serif;
+  }
+  
+  html, body {
+    font-size: 10px;
+    height: 100%;
+    background: var(--fondo-principal);
+  }
+  
+  .header {
+    padding: 1.6rem;
+    z-index: 1;
+  }
+  
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .subcontenedor1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .subcontenedor2 {
+    height: 100%;
+  }
+  
+  .textoEntrada {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: var(--fondo-principal);
+    font-size: 2.5rem;
+    padding: 1.6rem;
+    resize: none;
+    overflow: auto;
+    margin-top: 1.6rem;
+    color: var(--azul-oscuro-400);
+    outline: none;
+  }
+  
+  .textoEntrada::placeholder {
+    color: var(--azul-oscuro-400);
+  }
+  
+  .advertencia {
+    display: flex;
+    flex-direction: row;
+    padding: 1.2rem;
+    align-items: center;
+    font-size: 1.4rem;
+  }
+  
+  .advertencia img {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-right: 0.7rem;
+  }
+  
+  .botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  
+  .boton-principal {
+    background-color: var(--azul-oscuro-400);
+    border-radius: 1.5rem;
+    border: none;
+    color: var(--blanco);
+    width: 80%;
+    cursor: pointer;
+    font-size: 1.6rem;
+    height: 5rem;
+  }
+  
+  .boton-principal:hover {
+    background-color: var(--azul-oscuro-500);
+  }
+  
+  .boton-secundario {
+    background-color: var(--fondo-principal);
+    border-radius: 1.2rem;
+    border: 0.1rem solid var(--azul-oscuro-500);
+    color: var(--azul-oscuro-500);
+    width: 80%;
+    cursor: pointer;
+    font-size: 1.6rem;
+    height: 5rem;
+    padding: 0 8rem; /* Aumenta el padding horizontal */
+    box-sizing: border-box; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .boton-secundario:hover {
+    background-color: var(--azul-claro-100);
+  }
+  
+  .contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: 1.6rem;
+  }
+  
+  .tarjeta {
+    width: 82%;
+    height: 100%;
+    background-color: var(--blanco);
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+    overflow: scroll;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .tarjeta-cuerpo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+  }
+  
+  .tarjeta-texto {
+    width: 100%;
+    font-size: 2.5rem;
+    font-size: 1.6rem;
+    color: var(--gris-500);
+  }
+  
+  .tarjeta-cuerpo > * {
+    padding: 1rem;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0.2em;
+    background-color: transparent;
+  }
+  
+  .tarjeta-cuerpo img {
+    display: none;
+  }
+  
+  .tarjeta-titulo {
+    font-size: 2.5rem;
+    color: var(--gris-500);
+    font-weight: bold;
+  }
+
+  .tarjeta-pie{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .footer {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    font-size: 1.5rem;
+  }
+  
+  .nombreCreador {
+    color: var(--gris-500);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  @media (min-width: 768px) {
+    .header {
+      padding-top: 7rem;
+      padding-left: 3rem;
+    }
+  
+    .textoEntrada {
+      font-size: 3.5rem;
+      padding: 3rem;
+    }
+  
+    .advertencia {
+      padding: 3rem;
+    }
+  
+    .advertencia img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  
+    .boton-principal {
+      width: 45%;
+      font-size: 2.5rem;
+      height: 7rem;
+    }
+  
+    .boton-secundario {
+      width: 45%;
+      font-size: 2.5rem;
+      height: 7rem;
+    }
+  
+    .tarjeta {
+      width: 90%;
+    }
+  
+    .tarjeta-titulo {
+      font-size: 3rem;
+    }
+  
+    .tarjeta-texto {
+      font-size: 2rem;
+    }
+  
+    .footer {
+      font-size: 2rem;
+    }
+  
+    .botones {
+      flex-direction: row;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    html, body {
+      overflow: hidden;
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .header {
+      padding-top: 2rem;
+      padding-left: 6rem;
+      height: 10%;
+    }
+  
+    .contenedor {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 80%;
+      gap: 3rem;
+    }
+  
+    .subcontenedor2 {
+      height: 100%;
+      width: 30%;
+      overflow: auto;
+      justify-content: space-between;
+    }
+  
+    .textoEntrada {
+      padding: 0;
+    }
+  
+    .contenedor-tarjetas {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .tarjeta {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .tarjeta-cuerpo {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .tarjeta-cuerpo img {
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .tarjeta-texto {
+      width: 100%;
+    }
+  
+    .footer {
+      font-size: 2rem;
+      height: 10%;
+    }
+  }
+  

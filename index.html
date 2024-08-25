@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/Logo.png" alt="Logo Alura" class="logo"/>
+    </header>
+
+    <div class="contenedor">
+        <div class="subcontenedor1">
+            <textarea
+                name="texto"
+                id="textoEntrada"
+                class="textoEntrada"
+                cols="30"
+                rows="10"
+                placeholder="Ingrese el texto aquí">
+            </textarea>
+
+            <div class="grupo1">
+                <div class="advertencia">
+                    <img src="./assets/Signo de exclamacion.png" alt="signo de advertencia">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button id="botonEncriptar" class="boton-principal" onclick="encriptarTexto()">Encriptar</button>
+                    <button id="botonDesencriptar" class="boton-secundario" onclick="desencriptarTexto()">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="subcontenedor2">
+            <div class="contenedor-tarjetas">
+                <div class="tarjeta">
+                    <div class="tarjeta-cuerpo">
+                        <img src="assets/Muñeco.png" alt="Muñeco">
+                        <h3 class="tarjeta-titulo">Ningún mensaje fue encontrado</h3>
+                        <p class="tarjeta-texto">
+                            Ingresa el texto que desees encriptar o desencriptar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="nombreCreador">Creado por: Brigitte Piamonte</p>
+    </footer>
+</body>
+</html>
